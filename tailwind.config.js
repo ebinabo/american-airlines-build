@@ -3,7 +3,7 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
-            color: {
+            colors: {
                 blue: {
                     100: "#EDF4F9", //light blue
                     300: "#76819E", // text blue
@@ -16,5 +16,8 @@ module.exports = {
     variants: {
         extend: {},
     },
-    plugins: [],
+    plugins: [
+        require("@tailwindcss/aspect-ratio"),
+        require("@tailwindcss/forms"),
+    ],
 }
