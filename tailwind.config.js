@@ -1,7 +1,7 @@
 const { fontFamily } = require("tailwindcss/defaultTheme")
 
 module.exports = {
-    purge: ["./src/**/*.{tsx}"],
+    purge: ["./src/**/*.{tsx,ts}"],
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
