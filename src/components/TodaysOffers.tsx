@@ -15,7 +15,7 @@ const offers: Offer[] = [
         thumbnail: "/images/offers-2.png",
         title: "Trip to California",
         offer:
-            "From seasonal deals to early-bird discounts, find more ways to culture and save when you book them!s",
+            "From seasonal deals to early-bird discounts, find more ways to culture and save when you book them!",
     },
     {
         thumbnail: "/images/offers-3.png",
@@ -37,13 +37,15 @@ export default function TodaysOffers() {
                         </div>
                         <div className="p-6">
                             <h3 className="text-blue-700">{title}</h3>
-                            <p className="mt-3">{offer}</p>
-                            <button className="mt-6">See Deal</button>
+                            <p className="mt-3 text-blue-300">{offer}</p>
+                            <button className="mt-6 px-4 py-1 border rounded-md text-blue-500 border-blue-500">
+                                See Deal
+                            </button>
                         </div>
                     </div>
                 ))}
             </div>
-            <button className="uppercase text-white bg-blue-500 mt-12 block mx-auto">
+            <button className="uppercase text-white tracking-wide font-bold px-8 py-1.5 rounded-md bg-blue-500 mt-12 block mx-auto">
                 View All Deals
             </button>
         </div>

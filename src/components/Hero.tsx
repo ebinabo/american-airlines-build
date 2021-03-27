@@ -26,7 +26,7 @@ export default function Hero() {
                                 className="w-112 h-12 pl-8 rounded-lg"
                             />
                         </div>
-                        <button className="uppercase text-white bg-blue-500">
+                        <button className="uppercase px-8 rounded-md font-bold tracking-wide text-white bg-blue-500">
                             Search
                         </button>
                     </div>

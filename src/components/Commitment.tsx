@@ -13,21 +13,21 @@ export default function Commitment() {
                     <h2 className="text-blue-500 font-bold text-3xl">
                         American Airline Commitment
                     </h2>
-                    <p className="mt-6">
+                    <p className="mt-6 text-blue-300">
                         We’ve enhanced our cleaning procedures and added new
                         protocols at every step to reduce risks when you fly.
                         Amerian airline cares about your health and everything
                         that belongs to you. We are here to give you the best
                         commitment to your flight.
                     </p>
-                    <p className="mt-6">
+                    <p className="mt-6 text-blue-300">
                         We’ve enhanced our cleaning procedures and added new
                         protocols at every step to reduce risks when you fly.
                         Amerian airline cares about your ealth and everything
                         that belongs to you. We are here to give you the best
                         commitment to your flight.
                     </p>
-                    <button className="mt-10 bg-blue-500 text-white">
+                    <button className="mt-10 px-8 py-1.5 rounded-md font-bold tracking-wide bg-blue-500 text-white">
                         SEE COMMITMENT
                     </button>
                 </div>

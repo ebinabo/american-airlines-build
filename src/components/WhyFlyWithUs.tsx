@@ -51,11 +51,17 @@ export default function WhyFlyWithUs() {
                         <h3
                             className={`${
                                 index ? "text-blue-500" : "text-white"
-                            }`}
+                            } mt-3.5`}
                         >
                             {reason.title}
                         </h3>
-                        <p>{reason.description}</p>
+                        <p
+                            className={`${
+                                index ? "text-blue-300" : "text-white"
+                            } mt-3`}
+                        >
+                            {reason.description}
+                        </p>
                     </div>
                 ))}
             </div>

@@ -31,7 +31,7 @@ export default function TravelNews() {
             <h2 className="text-blue-700 text-3xl">Travel News</h2>
             <div className="grid grid-cols-3 gap-4 mt-8">
                 {news.map(item => (
-                    <div>
+                    <div className="shadow-md rounded-md">
                         <div className="w-full aspect-w-2 aspect-h-1">
                             <img
                                 className="absolute inset-0"
@@ -39,9 +39,13 @@ export default function TravelNews() {
                                 alt=""
                             />
                         </div>
-                        <h3>{item.title}</h3>
-                        <p>{item.news}</p>
-                        <button>Read More</button>
+                        <div className="p-6">
+                            <h3 className="text-blue-700">{item.title}</h3>
+                            <p className="text-blue-300 mt-3">{item.news}</p>
+                            <button className="text-blue-500 border border-blue-500 rounded-md px-2 py-1 mt-6">
+                                Read More
+                            </button>
+                        </div>
                     </div>
                 ))}
             </div>

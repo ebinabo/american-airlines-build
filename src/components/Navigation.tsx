@@ -13,7 +13,7 @@ export default function Navigation() {
                     />
                 </div>
                 <div>
-                    <ul className="flex items-center text-blue-500">
+                    <ul className="flex items-center text-blue-500 space-x-8 uppercase">
                         {routes.map(route => (
                             <li key={route}>
                                 <Link href="/">
@@ -22,13 +22,17 @@ export default function Navigation() {
                             </li>
                         ))}
                         <li>
-                            <select className="border-none pr-8" name="" id="">
+                            <select
+                                className="border-none pr-8 uppercase"
+                                name=""
+                                id=""
+                            >
                                 <option value="">English</option>
                                 <option value="">French</option>
                             </select>
                         </li>
                         <li>
-                            <button className="bg-blue-500 uppercase text-white">
+                            <button className="px-8 py-1.5 rounded-md bg-blue-500 uppercase text-white">
                                 Login
                             </button>
                         </li>
