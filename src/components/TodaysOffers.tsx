@@ -45,7 +45,7 @@ export default function TodaysOffers() {
                     </div>
                 ))}
             </div>
-            <button className="uppercase text-white tracking-wide font-bold px-8 py-1.5 rounded-md bg-blue-500 mt-12 block mx-auto">
+            <button className="uppercase text-white tracking-wide font-bold px-8 py-4 rounded-md bg-blue-500 mt-12 block mx-auto">
                 View All Deals
             </button>
         </div>

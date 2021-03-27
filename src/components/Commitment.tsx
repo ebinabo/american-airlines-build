@@ -27,7 +27,7 @@ export default function Commitment() {
                         that belongs to you. We are here to give you the best
                         commitment to your flight.
                     </p>
-                    <button className="mt-10 px-8 py-1.5 rounded-md font-bold tracking-wide bg-blue-500 text-white">
+                    <button className="mt-10 px-8 py-4 rounded-md font-bold tracking-wide bg-blue-500 text-white">
                         SEE COMMITMENT
                     </button>
                 </div>
