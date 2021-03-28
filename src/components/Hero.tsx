@@ -2,7 +2,7 @@ export default function Hero() {
     return (
         <div className="md:aspect-w-2 md:aspect-h-1 bg-gray-800 bg-hero bg-top bg-cover">
             <div className="container mx-auto px-6">
-                <div className="md:h-full h-screen grid content-center">
+                <div className="md:h-full h-screen grid content-center pb-32 md:pb-0 text-center md:text-left">
                     <h2 className="text-white font-bold text-3xl md:text-5xl">
                         Travel with peace of mind
                     </h2>
