@@ -75,10 +75,20 @@ export default function Footer() {
                                     Kem Kem
                                 </a>
                             </Link>
-                            <span> x ebinabo</span>
+                            <span> x </span>
+                            <Link href="mailto:edgarjohn95@gmail.com">
+                                <a className="underline" target="_blank">
+                                    ebinabo
+                                </a>
+                            </Link>
                         </p>
                         <p className="sm:justify-self-center col-start-1 sm:col-start-2 text-white">
-                            &copy; 2020 American Airline
+                            <span className="hidden sm:inline-block">
+                                &copy; 2020 American Airline
+                            </span>
+                            <span className="sm:hidden inline-block">
+                                &copy; 2020 AA
+                            </span>
                         </p>
                         <div className="justify-self-end row-start-1 col-start-2 sm:col-start-3 row-span-2 grid items-center">
                             <svg
