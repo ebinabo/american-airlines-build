@@ -37,9 +37,9 @@ const reasons: Reasons[] = [
 
 export default function WhyFlyWithUs() {
     return (
-        <div className="container mx-auto mt-32 px-6">
+        <div className="container mx-auto mt-16 sm:mt-32 px-6">
             <h2 className="text-blue-700 text-3xl">Why fly with us?</h2>
-            <div className="grid grid-cols-4 gap-4 mt-8">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6 md:mt-8">
                 {reasons.map((reason, index) => (
                     <div
                         key={reason.title}

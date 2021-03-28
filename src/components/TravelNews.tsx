@@ -27,9 +27,9 @@ const news: News[] = [
 
 export default function TravelNews() {
     return (
-        <div className="container mx-auto mt-40 px-6">
+        <div className="container mx-auto mt-12 md:mt-40 px-6">
             <h2 className="text-blue-700 text-3xl">Travel News</h2>
-            <div className="grid grid-cols-3 gap-4 mt-8">
+            <div className="grid md:grid-cols-3 gap-4 mt-6 md:mt-8">
                 {news.map(item => (
                     <div className="shadow-md rounded-md">
                         <div className="w-full aspect-w-2 aspect-h-1">

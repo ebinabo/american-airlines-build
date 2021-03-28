@@ -43,10 +43,10 @@ const categories: Category[] = [
 
 export default function Footer() {
     return (
-        <footer className="mt-64">
+        <footer className="mt-12 sm:mt-20 md:mt-32">
             <div className="bg-blue-100">
                 <div className="container mx-auto px-6 pt-12 pb-16">
-                    <div className="grid grid-cols-4 gap-4">
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-6">
                         {categories.map(category => (
                             <div key={category.name}>
                                 <h3 className="text-blue-700 text-xl">
@@ -68,7 +68,7 @@ export default function Footer() {
 
             <div className="bg-blue-700">
                 <div className="container mx-auto px-6 py-4">
-                    <div className="grid grid-cols-3">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-0">
                         <p className="text-white">
                             <Link href="https://kemiadeleke.com">
                                 <a className="underline" target="_blank">
@@ -77,10 +77,10 @@ export default function Footer() {
                             </Link>
                             <span> x ebinabo</span>
                         </p>
-                        <p className="justify-self-center text-white">
+                        <p className="sm:justify-self-center col-start-1 sm:col-start-2 text-white">
                             &copy; 2020 American Airline
                         </p>
-                        <div className="justify-self-end">
+                        <div className="justify-self-end row-start-1 col-start-2 sm:col-start-3 row-span-2 grid items-center">
                             <svg
                                 width="124"
                                 height="24"

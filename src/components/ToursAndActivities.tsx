@@ -8,9 +8,9 @@ const images: { city: string; image: string }[] = [
 
 export default function ToursAndActivities() {
     return (
-        <div className="container mx-auto mt-32 px-6">
+        <div className="container mx-auto mt-12 md:mt-32 px-6">
             <h2 className="text-blue-700 text-3xl">Tours and Activities</h2>
-            <div className="grid grid-cols-3 gap-x-5 gap-y-6 mt-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-x-5 gap-y-6 mt-6 md:mt-8">
                 {images.map(({ city, image }, index) => (
                     <div
                         key={city}
@@ -18,7 +18,7 @@ export default function ToursAndActivities() {
                             index
                                 ? "row-span-1 aspect-h-1"
                                 : "row-span-2 aspect-h-2"
-                        } aspect-w-1`}
+                        } ${index > 2 ? "hidden md:block" : ""} aspect-w-1`}
                     >
                         <img
                             className="w-full object-cover rounded-md"
