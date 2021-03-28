@@ -6,7 +6,7 @@ export default function Navigation() {
     return (
         <nav className="container mx-auto px-6">
             <div className="flex items-center justify-between space-x-4">
-                <div className="flex-shrink-0 -ml-10 sm:ml-0">
+                <div className="flex-shrink-0">
                     <img
                         className="sm:inline-block hidden"
                         src="/images/aa-logo.png"
