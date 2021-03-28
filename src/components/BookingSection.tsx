@@ -168,7 +168,7 @@ export default function BookingSection() {
                     </div>
                 </div>
 
-                <div className="px-4">
+                <div className="px-8">
                     <button className="block w-full md:w-auto mx-auto mt-14 px-8 py-4 rounded-md font-bold tracking-wide bg-blue-500 uppercase text-white">
                         Book Flight
                     </button>
