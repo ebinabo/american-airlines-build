@@ -1,9 +1,9 @@
 export default function DownloadApp() {
     return (
         <div className="bg-blue-700">
-            <div className="container mx-auto mt-32 px-6">
-                <div className="grid grid-cols-2 gap-8 items-center">
-                    <div>
+            <div className="container mx-auto mt-16 lg:mt-32 px-6">
+                <div className="grid md:grid-cols-2 md:gap-8 items-center">
+                    <div className="order-last md:order-none pb-16 md:pb-0">
                         <h2 className="text-4xl text-white font-bold">
                             Download the American Airline app for easy access to
                             travel
@@ -23,7 +23,11 @@ export default function DownloadApp() {
                         </div>
                     </div>
                     <div className="pt-16 pb-9">
-                        <img src="/images/download-app.png" alt="" />
+                        <img
+                            className="w-full"
+                            src="/images/download-app.png"
+                            alt=""
+                        />
                     </div>
                 </div>
             </div>

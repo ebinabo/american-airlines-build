@@ -27,9 +27,9 @@ const offers: Offer[] = [
 
 export default function TodaysOffers() {
     return (
-        <div className="container mx-auto mt-32 px-6">
+        <div className="container mx-auto mt-12 md:mt-32 px-6">
             <h2 className="text-blue-700 text-3xl">Today's Offers</h2>
-            <div className="grid grid-cols-3 gap-4 mt-8">
+            <div className="grid md:grid-cols-3 gap-4 mt-6 md:mt-8">
                 {offers.map(({ offer, thumbnail, title }) => (
                     <div key={title} className="shadow-md rounded-md">
                         <div className="aspect-w-2 aspect-h-1">
@@ -45,7 +45,7 @@ export default function TodaysOffers() {
                     </div>
                 ))}
             </div>
-            <button className="uppercase text-white tracking-wide font-bold px-8 py-4 rounded-md bg-blue-500 mt-12 block mx-auto">
+            <button className="w-full sm:w-auto uppercase text-white tracking-wide font-bold px-8 py-4 rounded-md bg-blue-500 mt-12 block mx-auto">
                 View All Deals
             </button>
         </div>

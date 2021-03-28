@@ -14,20 +14,22 @@ import {
 
 export default function Home() {
     return (
-        <main>
+        <>
             <Head>
                 <title>American Airlines Rebuild</title>
             </Head>
             <Navigation />
-            <Hero />
-            <BookingSection />
-            <WhyFlyWithUs />
-            <TodaysOffers />
-            <Commitment />
-            <DownloadApp />
-            <ToursAndActivities />
-            <TravelNews />
-            <Footer />
-        </main>
+            <main>
+                <Hero />
+                <BookingSection />
+                <WhyFlyWithUs />
+                <TodaysOffers />
+                <Commitment />
+                <DownloadApp />
+                <ToursAndActivities />
+                <TravelNews />
+                <Footer />
+            </main>
+        </>
     )
 }

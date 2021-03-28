@@ -66,14 +66,18 @@ const tabs: { icon: string; label: string }[] = [
 export default function BookingSection() {
     return (
         <form className="container mx-auto px-6">
-            <div className="border rounded-xl shadow-lg -mt-12 py-8 relative bg-white">
+            <div className="border rounded-xl shadow-lg -mt-20 md:-mt-12 py-8 relative bg-white">
                 {/* Tabs */}
                 <div className="border-b">
                     <div className="flex justify-around px-8">
                         {tabs.map((tab, index) => (
                             <div
                                 key={tab.label}
-                                className=" relative flex pb-2"
+                                className={`${
+                                    index
+                                        ? " hidden sm:flex"
+                                        : "flex flex-1 justify-center sm:flex-none sm:justify-start"
+                                } relative pb-2`}
                             >
                                 {!index ? (
                                     <span className="absolute bottom-0 h-0.5 w-full bg-blue-500" />
@@ -87,7 +91,7 @@ export default function BookingSection() {
 
                 <div className="px-8">
                     {/* Radio Group */}
-                    <div className="mt-6 flex justify-around">
+                    <div className="mt-6 md:flex justify-around hidden">
                         {["Round trip", "One way", "Redeem miles"].map(
                             option => (
                                 <div
@@ -105,8 +109,28 @@ export default function BookingSection() {
                         )}
                     </div>
 
+                    <div className="mt-6 block md:hidden">
+                        <label htmlFor="">Trip Type</label>
+                        <select
+                            className="mt-4 w-full rounded-md"
+                            name=""
+                            id=""
+                        >
+                            {["Round trip", "One way", "Redeem miles"].map(
+                                option => (
+                                    <option
+                                        className="flex items-center space-x-2"
+                                        key={option}
+                                    >
+                                        {option}
+                                    </option>
+                                )
+                            )}
+                        </select>
+                    </div>
+
                     {/* Form Group */}
-                    <div className="mt-6 grid grid-cols-3 gap-x-6 gap-y-8">
+                    <div className="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
                         {inputFields.map(field => (
                             <div key={field.label}>
                                 <label htmlFor="">{field.label}</label>
@@ -144,9 +168,11 @@ export default function BookingSection() {
                     </div>
                 </div>
 
-                <button className="block mx-auto mt-14 px-8 py-4 rounded-md font-bold tracking-wide bg-blue-500 uppercase text-white">
-                    Book Flight
-                </button>
+                <div className="px-4">
+                    <button className="block w-full md:w-auto mx-auto mt-14 px-8 py-4 rounded-md font-bold tracking-wide bg-blue-500 uppercase text-white">
+                        Book Flight
+                    </button>
+                </div>
             </div>
         </form>
     )
